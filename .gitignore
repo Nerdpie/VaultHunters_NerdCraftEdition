@@ -1,11 +1,27 @@
-logs
-screenshots
-mods
-saves
-patchouli_data.json
-crash-reports
-local/ftbchunks/data
+# General
+Desktop.ini
+.DS_Store
+*.swp
+Thumbs.db
+
+# Minecraft - General
+crash-reports/
+dumps/
+logs/
+mods/
+saves/
+screenshots/
+# options.txt
 usercache.json
 usernamecache.json
-Quark Programmer Art.zip
 *.toml.bak
+
+# Mod-specific
+local/ftbchunks/data
+.mixin.out/
+patchouli_data.json
+realms_persistence.json
+XaeroWaypoints/
+XaeroWorldMap
+
+resourcepacks/Quark\ Programmer\ Art.zip
