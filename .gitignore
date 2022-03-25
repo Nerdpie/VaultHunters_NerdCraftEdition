@@ -20,8 +20,9 @@ usernamecache.json
 local/ftbchunks/data
 .mixin.out/
 patchouli_data.json
+playerSnapshots/
 realms_persistence.json
-XaeroWaypoints/
+XaeroWaypoints*/
 XaeroWorldMap
 
 resourcepacks/Quark\ Programmer\ Art.zip
