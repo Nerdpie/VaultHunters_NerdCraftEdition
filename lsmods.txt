@@ -3,6 +3,7 @@ appliedenergistics2-8.4.6.jar
 archers_paradox-1.16.5-1.4.0.1.jar
 architectury-1.28.48.jar
 AutoRegLib-1.6-49.jar
+BetterAdvancements-1.16.4-0.1.0.104.jar
 blockcarpentry-1.16-0.4.0.jar
 Bookshelf-Forge-1.16.5-10.3.29.jar
 Botania-1.16.5-420.1.jar
@@ -13,9 +14,11 @@ Clumps-6.0.0.27.jar
 cofh_core-1.16.5-1.4.0.6.jar
 comforts-forge-1.16.5-4.0.1.3.jar
 Compressium-1.16.5-1.2.3.jar
+ContentCreatorIntegration-1.16.5-Forge-1.9.1.jar
 Controlling-7.0.0.28.jar
 CookingForBlockheads_1.16.5-9.3.4.jar
 corpse-1.16.5-1.0.6.jar
+CraftingTweaks_1.16.5-12.2.1.jar
 CraftTweaker-1.16.5-7.1.2.487.jar
 create-mc1.16.5_v0.3.2g.jar
 CreateTweaker-1.0.0.26.jar
@@ -33,6 +36,7 @@ entitydetectors-1.16.4-1.1.0.1.jar
 enviromats-1.16.5-2.0.9.0.jar
 fairylights-4.0.5-1.16.5.jar
 FastWorkbench-1.16.5-4.6.1.jar
+ferritecore-2.1.0-forge.jar
 FluxNetworks-1.16.5-6.1.7.12.jar
 flywheel-1.16-0.2.5.jar
 framedcompactdrawers-1.16-2.2.1.jar
@@ -48,11 +52,15 @@ ironfurnaces-1.16.5-2.7.7.jar
 IronJetpacks-1.16.5-4.2.3.jar
 iskallutilities-1.4.jar
 ispawner-0.1.7-forge.jar
+itemzoom-1.16.4-2.3.0.jar
 jei-1.16.5-7.7.1.139.jar
 jeiintegration_1.16.5-7.0.1.15.jar
 JEITweaker-1.16.5-1.1.0.49.jar
+JustEnoughProfessions-1.16.5-1.2.1.jar
 JustEnoughResources-1.16.5-0.12.1.133.jar
+lazydfu-0.1.3.jar
 Lollipop-1.16.5-3.2.9.jar
+lootr-1.16.5-0.1.11.38.jar
 masonry-1.16.3-0.3.6.jar
 mcjtylib-1.16-5.1.2.jar
 mcw-bridges-2.0.1-mc1.16.5.jar
@@ -66,6 +74,7 @@ metalbarrels-1.16.2-3.3b.jar
 mininggadgets-1.7.5.jar
 MmmMmmMmmMmm-1.16.5-1.3.1.jar
 modular-routers-1.16.5-7.4.0-55.jar
+moreoverlays-1.18.15-mc1.16.5.jar
 Morpheus-1.16.5-4.2.70.jar
 MouseTweaks-2.14-mc1.16.2.jar
 movingelevators-1.2.34-mc1.16.5.jar
@@ -90,6 +99,7 @@ rsrequestify-1.16.5-2.1.4.jar
 Runelic-1.16.5-7.0.2.jar
 selene-1.16.5-1.9.0.jar
 shetiphiancore-1.16-3.8.6.jar
+shutupexperimentalsettings-1.0.3.jar
 simplybackpacks-1.16.5-2.0.1-build.27.jar
 simplylight-1.16.5-1.4.0-build.24.jar
 snad-1.0.9-forge.jar
@@ -104,10 +114,12 @@ titanium-1.16.5-3.2.8.4-10.jar
 torchmaster-2.3.8.jar
 torohealth-1.16.4-forge-4.jar
 trashcans-1.0.11-mc1.16.jar
+TwitchChatIntegration_1.16.4-5.1.1-all.jar
 useful_railroads-1.16.5-1.4.6.38.jar
 u_team_core-1.16.5-3.2.1.196.jar
 valkyrielib-1.16.5-3.0.9.5.jar
 Waddles-1.16.5-0.8.13.jar
+WailaHarvestability-mc1.16.x-forge-1.1.15.jar
 Waystones_1.16.5-7.6.4.jar
 Xaeros_Minimap_21.14.1_Forge_1.16.5.jar
 XaerosWorldMap_1.16.0_Forge_1.16.5.jar

@@ -26,3 +26,10 @@ XaeroWaypoints*/
 XaeroWorldMap
 
 resourcepacks/Quark\ Programmer\ Art.zip
+
+# SECURITY/PRIVACY CRITICAL
+contentcreatorintegration.toml
+
+# Decide per-pack
+jei/bookmarks.ini
+options.txt
