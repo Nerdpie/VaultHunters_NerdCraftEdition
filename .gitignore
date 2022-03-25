@@ -31,5 +31,5 @@ resourcepacks/Quark\ Programmer\ Art.zip
 contentcreatorintegration.toml
 
 # Decide per-pack
-jei/bookmarks.ini
+config/jei/bookmarks.ini
 options.txt
