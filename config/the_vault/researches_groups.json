@@ -15,7 +15,8 @@
       "globalCostIncrease": 0.5,
       "groupCostIncrease": {
         "Storage": 2.0,
-        "Power": 1.0
+        "Power": 1.0,
+        "NerdCraft": 0.0
       }
     },
     "VaultUtils": {
@@ -33,7 +34,8 @@
       ],
       "globalCostIncrease": 0.5,
       "groupCostIncrease": {
-        "VaultUtils": 2.0
+        "VaultUtils": 2.0,
+        "NerdCraft": 0.0
       }
     },
     "Farming": {
@@ -52,7 +54,8 @@
       "globalCostIncrease": 0.5,
       "groupCostIncrease": {
         "Farming": 2.0,
-        "Processing": 1.0
+        "Processing": 1.0,
+        "NerdCraft": 0.0
       }
     },
     "Processing": {
@@ -71,7 +74,8 @@
       "globalCostIncrease": 0.5,
       "groupCostIncrease": {
         "Processing": 2.0,
-        "Farming": 1.0
+        "Farming": 1.0,
+        "NerdCraft": 0.0
       }
     },
     "Power": {
@@ -87,7 +91,8 @@
         "Power": 4.0,
         "Farming": 1.0,
         "Storage": 1.0,
-        "Processing": 1.0
+        "Processing": 1.0,
+        "NerdCraft": 0.0
       }
     },
     "Base": {
@@ -105,7 +110,8 @@
       ],
       "globalCostIncrease": 0.5,
       "groupCostIncrease": {
-        "Base": 1.0
+        "Base": 1.0,
+        "NerdCraft": 0.0
       }
     },
     "Decoration": {
@@ -119,6 +125,16 @@
         "Fairy Lights"
       ],
       "globalCostIncrease": -1.0,
+      "groupCostIncrease": {
+        "NerdCraft": 0.0
+      }
+    },
+    "NerdCraft": {
+      "title": "NerdCraft",
+      "research": [
+        "NerdCraft Test"
+      ],
+      "globalCostIncrease": 0.0,
       "groupCostIncrease": {
       }
     }

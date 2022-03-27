@@ -90,6 +90,19 @@
         "u": 96,
         "v": 0
       }
+    },
+    "NerdCraft": {
+      "group": "NerdCraft",
+      "headerColor": -13479229,
+      "headerTextColor": -1,
+      "x": -10,
+      "y": 295,
+      "boxWidth": 170,
+      "boxHeight": 145,
+      "icon": {
+        "u": 64,
+        "v": 48
+      }
     }
   }
 }

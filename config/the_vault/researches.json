@@ -1295,6 +1295,16 @@
       "name": "Vault Powerups",
       "cost": 2,
       "usesKnowledge": true
+    },
+    {
+      "itemRestrictions": {
+        
+      },
+      "blockRestrictions": {},
+      "entityRestrictions": {},
+      "name": "NerdCraft Test",
+      "cost": 0,
+      "usesKnowledge": true
     }
   ]
 }
