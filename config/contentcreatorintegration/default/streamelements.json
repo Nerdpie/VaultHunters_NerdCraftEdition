@@ -1,0 +1,84 @@
+{
+  "configs": [
+    {
+      "types": {
+        "cheer": [
+          {
+            "conditions": [],
+            "outcomes": [
+              {
+                "message": "Hey $streamer, $user just sent you $amount bits!",
+                "type": "chat"
+              }
+            ],
+            "playTime": "20"
+          }
+        ],
+        "subscriber": [
+          {
+            "conditions": [],
+            "outcomes": [
+              {
+                "message": "Hey $streamer, $user just subscribed for $amount months!",
+                "type": "chat"
+              }
+            ],
+            "playTime": "20"
+          }
+        ],
+        "follower": [
+          {
+            "conditions": [],
+            "outcomes": [
+              {
+                "message": "Hey $streamer, $user just followed!",
+                "type": "chat"
+              }
+            ],
+            "playTime": "20"
+          }
+        ],
+        "host": [
+          {
+            "conditions": [],
+            "outcomes": [
+              {
+                "message": "Hey $streamer, $user just hosted you for up to $amount viewers!",
+                "type": "chat"
+              }
+            ],
+            "playTime": "20"
+          }
+        ],
+        "raid": [
+          {
+            "conditions": [],
+            "outcomes": [
+              {
+                "message": "Hey $streamer, $user just raided you with $amount raiders!",
+                "type": "chat"
+              }
+            ]
+          }
+        ],
+        "tip": [
+          {
+            "conditions": [],
+            "outcomes": [
+              {
+                "message": "Hey $streamer, $user just tipped $$amount!",
+                "type": "chat"
+              }
+            ]
+          }
+        ]
+      },
+      "queue": [
+        "host+subscriber+cheer",
+        "follow"
+      ]
+    }
+  ],
+  "init": [],
+  "type": "streamelements"
+}

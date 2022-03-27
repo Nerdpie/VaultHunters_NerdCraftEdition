@@ -17,6 +17,7 @@ usernamecache.json
 *.toml.bak
 
 # Mod-specific
+config/contentcreatorintegration/default/stats.json
 local/ftbchunks/data
 .mixin.out/
 patchouli_data.json
