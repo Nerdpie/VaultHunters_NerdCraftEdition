@@ -1298,12 +1298,115 @@
     },
     {
       "itemRestrictions": {
-        
+        "mekanism:oredictionificator": {
+          "restricts": {
+            "HITTABILITY": false,
+            "USABILITY": false,
+            "CRAFTABILITY": false
+          }
+        },
+        "appliedenergistics2:sky_stone_block": {
+          "restricts": {
+            "HITTABILITY": true,
+            "USABILITY": true,
+            "CRAFTABILITY": true
+          }
+        },
+        "appliedenergistics2:sky_stone_chest": {
+          "restricts": {
+            "HITTABILITY": true,
+            "USABILITY": true,
+            "CRAFTABILITY": true
+          }
+        },
+        "appliedenergistics2:nether_quartz_axe": {
+          "restricts": {
+            "HITTABILITY": true,
+            "USABILITY": true,
+            "CRAFTABILITY": true
+          }
+        },
+        "appliedenergistics2:nether_quartz_hoe": {
+          "restricts": {
+            "HITTABILITY": true,
+            "USABILITY": true,
+            "CRAFTABILITY": true
+          }
+        },
+        "appliedenergistics2:nether_quartz_shovel": {
+          "restricts": {
+            "HITTABILITY": true,
+            "USABILITY": true,
+            "CRAFTABILITY": true
+          }
+        },
+        "appliedenergistics2:nether_quartz_pickaxe": {
+          "restricts": {
+            "HITTABILITY": true,
+            "USABILITY": true,
+            "CRAFTABILITY": true
+          }
+        },
+        "appliedenergistics2:nether_quartz_sword": {
+          "restricts": {
+            "HITTABILITY": true,
+            "USABILITY": true,
+            "CRAFTABILITY": true
+          }
+        },
+        "appliedenergistics2:certus_quartz_axe": {
+          "restricts": {
+            "HITTABILITY": true,
+            "USABILITY": true,
+            "CRAFTABILITY": true
+          }
+        },
+        "appliedenergistics2:certus_quartz_hoe": {
+          "restricts": {
+            "HITTABILITY": true,
+            "USABILITY": true,
+            "CRAFTABILITY": true
+          }
+        },
+        "appliedenergistics2:certus_quartz_shovel": {
+          "restricts": {
+            "HITTABILITY": true,
+            "USABILITY": true,
+            "CRAFTABILITY": true
+          }
+        },
+        "appliedenergistics2:certus_quartz_pickaxe": {
+          "restricts": {
+            "HITTABILITY": true,
+            "USABILITY": true,
+            "CRAFTABILITY": true
+          }
+        },
+        "appliedenergistics2:certus_quartz_sword": {
+          "restricts": {
+            "HITTABILITY": true,
+            "USABILITY": true,
+            "CRAFTABILITY": true
+          }
+        },
+        "appliedenergistics2:quartz_block": {
+          "restricts": {
+            "HITTABILITY": true,
+            "USABILITY": true,
+            "CRAFTABILITY": true
+          }
+        }
       },
-      "blockRestrictions": {},
+      "blockRestrictions": {
+        "appliedenergistics2:sky_stone_block": {
+          "restricts": {
+            "INTERACTABILITY": true
+          }
+        }
+      },
       "entityRestrictions": {},
-      "name": "NerdCraft Test",
-      "cost": 0,
+      "name": "NerdCraft Tweaks",
+      "cost": 1,
       "usesKnowledge": true
     }
   ]
