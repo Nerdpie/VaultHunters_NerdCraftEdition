@@ -6,176 +6,246 @@ import crafttweaker.api.Brewing;
 import crafttweaker.api.registries.IRecipeManager;
 import mods.botania.ElvenTrade;
 
+// ====================
+// Variables and constants for readability
+// ====================
+
+// Vault entries
+val gemAlex = <item:the_vault:gem_alexandrite>;
+val gemBeni = <item:the_vault:gem_benitoite>;
+val gemEcho = <item:the_vault:gem_echo>;
+val gemLari = <item:the_vault:gem_larimar>;
+val gemOpal = <item:the_vault:gem_black_opal>;
+val gemWuto = <item:the_vault:gem_wutodie>;
+val perfectAlex = <item:the_vault:perfect_alexandrite>;
+val perfectBeni = <item:the_vault:perfect_benitoite>;
+val perfectEcho = <item:the_vault:perfect_echo_gem>;
+val perfectLari = <item:the_vault:perfect_larimar>;
+val perfectOpal = <item:the_vault:perfect_black_opal>;
+val perfectWuto = <item:the_vault:perfect_wutodie>;
+val perfectCommon = <tag:items:the_vault:perfectcommongems>;
+val pogEcho = <item:the_vault:echo_pog>;
+val pogGem = <item:the_vault:gem_pog>;
+val vaultDia = <item:the_vault:vault_diamond>;
+val vaultDiaBlock = <item:the_vault:vault_diamond_block>;
+val vaultIngot = <item:the_vault:vault_ingot>;
+val vaultNugget = <item:the_vault:vault_nugget>;
+
+// Vanilla entries
+val air = <item:minecraft:air>;
+val blockGlowstone = <item:minecraft:glowstone>;
+val blockIron = <item:minecraft:iron_block>;
+val blockRedstone = <item:minecraft:redstone_block>;
+val bucketWater = <item:minecraft:water_bucket>;
+val glass = <tag:items:forge:glass>;
+val piston = <item:minecraft:piston>;
+val pistonSticky = <item:minecraft:sticky_piston>;
+val workbench = <tag:items:forge:workbench>;
+
+// AE2 entries
+val blockFluix = <item:appliedenergistics2:fluix_block>;
+val pureFluix = <item:appliedenergistics2:purified_fluix_crystal>;
+val processorLogi = <item:appliedenergistics2:logic_processor>;
+val processorCalc = <item:appliedenergistics2:calculation_processor>;
+val processorEngi = <item:appliedenergistics2:engineering_processor>;
+val coreAnnih = <item:appliedenergistics2:annihilation_core>;
+val coreForm = <item:appliedenergistics2:formation_core>;
+val crystalCertus = <tag:items:appliedenergistics2:crystals/certus>;
+val crystalCertusCharged = <item:appliedenergistics2:charged_certus_quartz_crystal>;
+val crystalFluix = <tag:items:appliedenergistics2:crystals/fluix>;
+val cableGlass = <tag:items:appliedenergistics2:glass_cable>;
+val cableFluix = <item:appliedenergistics2:fluix_glass_cable>;
+val cableFluixCovered = <item:appliedenergistics2:fluix_covered_cable>;
+val cableFluixSmart = <item:appliedenergistics2:fluix_smart_cable>;
+val cableDenseSmart = <item:appliedenergistics2:fluix_smart_dense_cable>;
+val glassQuartz = <item:appliedenergistics2:quartz_glass>;
+val component1k = <item:appliedenergistics2:1k_cell_component>;
+val component4k = <item:appliedenergistics2:4k_cell_component>;
+val component16k = <item:appliedenergistics2:16k_cell_component>;
+val energyAcceptor = <item:appliedenergistics2:energy_acceptor>;
+val terminal = <item:appliedenergistics2:terminal>;
+val tagInterface = <tag:items:appliedenergistics2:interface>;
+
+// Other mods
+val dustQuartz = <tag:items:forge:dusts/quartz>;
+val furnaceGold = <item:ironfurnaces:gold_furnace>;
+val silicon = <tag:items:forge:silicon>;
+
+
+// ====================
 // adding recipes
+// ====================
 
 craftingTable.addShaped("ae2_controller", <item:appliedenergistics2:controller>, [
-    [<item:the_vault:perfect_black_opal>, <item:the_vault:echo_pog>, <item:the_vault:perfect_black_opal>],
-    [<item:appliedenergistics2:purified_fluix_crystal>, <item:appliedenergistics2:engineering_processor>, <item:appliedenergistics2:purified_fluix_crystal>],
-    [<item:the_vault:perfect_black_opal>, <item:appliedenergistics2:purified_fluix_crystal>, <item:the_vault:perfect_black_opal>]
+    [perfectOpal, pogEcho, perfectOpal],
+    [pureFluix, processorEngi, pureFluix],
+    [perfectOpal, pureFluix, perfectOpal]
 ]);
 
 craftingTable.addShaped("ae2_drive", <item:appliedenergistics2:drive>, [
-    [<tag:items:the_vault:perfectcommongems>, <item:appliedenergistics2:engineering_processor>, <tag:items:the_vault:perfectcommongems>],
-    [<item:appliedenergistics2:fluix_glass_cable>, <item:the_vault:gem_pog>, <item:appliedenergistics2:fluix_glass_cable>],
-    [<tag:items:the_vault:perfectcommongems>, <item:appliedenergistics2:engineering_processor>, <tag:items:the_vault:perfectcommongems>]
+    [perfectCommon, processorEngi, perfectCommon],
+    [cableFluix, pogGem, cableFluix],
+    [perfectCommon, processorEngi, perfectCommon]
 ]);
 
 craftingTable.addShaped("ae2assembler", <item:appliedenergistics2:molecular_assembler>, [
-    [<item:the_vault:gem_black_opal>, <item:the_vault:gem_pog>, <item:the_vault:gem_black_opal>],
-    [<item:appliedenergistics2:annihilation_core>, <tag:items:forge:workbench>, <item:appliedenergistics2:formation_core>],
-    [<item:the_vault:gem_black_opal>, <item:the_vault:gem_pog>, <item:the_vault:gem_black_opal>]
+    [gemOpal, pogGem, gemOpal],
+    [coreAnnih, workbench, coreForm],
+    [gemOpal, pogGem, gemOpal]
 ]);
 
-craftingTable.addShaped("ae2_1k_storage_component", <item:appliedenergistics2:1k_cell_component>, [
-    [<item:the_vault:perfect_benitoite>, <tag:items:appliedenergistics2:crystals/certus>, <item:the_vault:perfect_benitoite>],
-    [<tag:items:appliedenergistics2:crystals/certus>, <item:the_vault:gem_alexandrite>, <tag:items:appliedenergistics2:crystals/certus>],
-    [<item:the_vault:perfect_benitoite>, <tag:items:appliedenergistics2:crystals/certus>, <item:the_vault:perfect_benitoite>]
+craftingTable.addShaped("ae2_1k_storage_component", component1k, [
+    [perfectBeni, crystalCertus, perfectBeni],
+    [crystalCertus, gemAlex, crystalCertus],
+    [perfectBeni, crystalCertus, perfectBeni]
 ]);
 
-craftingTable.addShaped("ae2_4k_storage_component", <item:appliedenergistics2:4k_cell_component>, [
-    [<item:the_vault:perfect_wutodie>, <item:the_vault:perfect_alexandrite>, <item:the_vault:perfect_wutodie>],
-    [<item:appliedenergistics2:1k_cell_component>, <item:the_vault:vault_diamond>, <item:appliedenergistics2:1k_cell_component>],
-    [<item:the_vault:perfect_wutodie>, <item:appliedenergistics2:1k_cell_component>, <item:the_vault:perfect_wutodie>]
+craftingTable.addShaped("ae2_4k_storage_component", component4k, [
+    [perfectWuto, perfectAlex, perfectWuto],
+    [component1k, vaultDia, component1k],
+    [perfectWuto, component1k, perfectWuto]
 ]);
 
-craftingTable.addShaped("ae2_16k_storage_component", <item:appliedenergistics2:16k_cell_component>, [
-    [<item:the_vault:perfect_black_opal>, <item:the_vault:perfect_alexandrite>, <item:the_vault:perfect_black_opal>],
-    [<item:appliedenergistics2:4k_cell_component>, <item:the_vault:vault_diamond_block>, <item:appliedenergistics2:4k_cell_component>],
-    [<item:the_vault:perfect_black_opal>, <item:appliedenergistics2:4k_cell_component>, <item:the_vault:perfect_black_opal>]
+craftingTable.addShaped("ae2_16k_storage_component", component16k, [
+    [perfectOpal, perfectAlex, perfectOpal],
+    [component4k, vaultDiaBlock, component4k],
+    [perfectOpal, component4k, perfectOpal]
 ]);
 
 craftingTable.addShaped("ae2_64k_storage_component", <item:appliedenergistics2:64k_cell_component>, [
-    [<item:the_vault:gem_pog>, <item:the_vault:perfect_alexandrite>, <item:the_vault:gem_pog>],
-    [<item:appliedenergistics2:16k_cell_component>, <item:the_vault:perfect_echo_gem>, <item:appliedenergistics2:16k_cell_component>],
-    [<item:the_vault:gem_pog>, <item:appliedenergistics2:16k_cell_component>, <item:the_vault:gem_pog>]
+    [pogGem, perfectAlex, pogGem],
+    [component16k, perfectEcho, component16k],
+    [pogGem, component16k, pogGem]
 ]);
 
-craftingTable.addShaped("ae2_logic_processor", <item:appliedenergistics2:logic_processor>, [
-    [<item:the_vault:perfect_larimar>, <item:minecraft:air>, <item:the_vault:perfect_larimar>],
-    [<tag:items:forge:silicon>, <item:the_vault:vault_ingot>, <tag:items:forge:silicon>],
-    [<item:the_vault:perfect_larimar>, <tag:items:forge:silicon>, <item:the_vault:perfect_larimar>]
+craftingTable.addShaped("ae2_logic_processor", processorLogi, [
+    [perfectLari, air, perfectLari],
+    [silicon, vaultIngot, silicon],
+    [perfectLari, silicon, perfectLari]
 ]);
 
-craftingTable.addShaped("ae2_calculation_processor", <item:appliedenergistics2:calculation_processor>, [
-    [<item:the_vault:perfect_benitoite>, <item:minecraft:air>, <item:the_vault:perfect_benitoite>],
-    [<tag:items:forge:silicon>, <item:the_vault:vault_nugget>, <tag:items:forge:silicon>],
-    [<item:the_vault:perfect_benitoite>, <tag:items:forge:silicon>, <item:the_vault:perfect_benitoite>]
+craftingTable.addShaped("ae2_calculation_processor", processorCalc, [
+    [perfectBeni, air, perfectBeni],
+    [silicon, vaultNugget, silicon],
+    [perfectBeni, silicon, perfectBeni]
 ]);
 
-craftingTable.addShaped("ae2_engineering_processor", <item:appliedenergistics2:engineering_processor>, [
-    [<item:the_vault:perfect_larimar>, <item:minecraft:air>, <item:the_vault:perfect_benitoite>],
-    [<tag:items:forge:silicon>, <item:the_vault:vault_nugget>, <tag:items:forge:silicon>],
-    [<item:the_vault:perfect_benitoite>, <tag:items:forge:silicon>, <item:the_vault:perfect_larimar>]
+craftingTable.addShaped("ae2_engineering_processor", processorEngi, [
+    [perfectLari, air, perfectBeni],
+    [silicon, vaultNugget, silicon],
+    [perfectBeni, silicon, perfectLari]
 ]);
 
 craftingTable.addShaped("ae2_crafting_unit", <item:appliedenergistics2:crafting_unit>, [
-    [<item:the_vault:perfect_larimar>, <item:appliedenergistics2:calculation_processor>, <item:the_vault:perfect_larimar>],
-    [<tag:items:appliedenergistics2:glass_cable>, <item:appliedenergistics2:logic_processor>, <tag:items:appliedenergistics2:glass_cable>],
-    [<item:the_vault:perfect_larimar>, <item:appliedenergistics2:calculation_processor>, <item:the_vault:perfect_larimar>]
+    [perfectLari, processorCalc, perfectLari],
+    [cableGlass, processorLogi, cableGlass],
+    [perfectLari, processorCalc, perfectLari]
 ]);
 
 craftingTable.addShaped("ae2_exporter", <item:appliedenergistics2:export_bus>, [
-    [<item:the_vault:perfect_larimar>, <item:minecraft:air>, <item:the_vault:perfect_larimar>],
-    [<tag:items:appliedenergistics2:glass_cable>, <item:appliedenergistics2:formation_core>, <tag:items:appliedenergistics2:glass_cable>],
-    [<item:the_vault:perfect_larimar>, <item:minecraft:piston>, <item:the_vault:perfect_larimar>]
+    [perfectLari, air, perfectLari],
+    [cableGlass, coreForm, cableGlass],
+    [perfectLari, piston, perfectLari]
 ]);
 
 craftingTable.addShaped("ae2_importer", <item:appliedenergistics2:import_bus>, [
-    [<item:the_vault:perfect_larimar>, <item:minecraft:air>, <item:the_vault:perfect_larimar>],
-    [<tag:items:appliedenergistics2:glass_cable>, <item:appliedenergistics2:annihilation_core>, <tag:items:appliedenergistics2:glass_cable>],
-    [<item:the_vault:perfect_larimar>, <item:minecraft:piston>, <item:the_vault:perfect_larimar>]
+    [perfectLari, air, perfectLari],
+    [cableGlass, coreAnnih, cableGlass],
+    [perfectLari, piston, perfectLari]
 ]);
 
 craftingTable.addShapeless("ae2_storage_bus", <item:appliedenergistics2:storage_bus>, [
-    <tag:items:appliedenergistics2:interface>, <item:minecraft:piston>, <item:the_vault:perfect_larimar>,
-    <item:minecraft:sticky_piston>, <item:the_vault:perfect_larimar>, <item:the_vault:perfect_larimar>
+    tagInterface, piston, perfectLari,
+    pistonSticky, perfectLari, perfectLari
 ]);
 
 craftingTable.addShaped("ae2_interface", <item:appliedenergistics2:interface>, [
-    [<item:minecraft:iron_block>, <tag:items:forge:glass>, <item:minecraft:iron_block>],
-    [<item:appliedenergistics2:annihilation_core>, <item:the_vault:perfect_larimar>, <item:appliedenergistics2:formation_core>],
-    [<item:minecraft:iron_block>, <tag:items:forge:glass>, <item:minecraft:iron_block>]
+    [blockIron, glass, blockIron],
+    [coreAnnih, perfectLari, coreForm],
+    [blockIron, glass, blockIron]
 ]);
 
-craftingTable.addShapeless("ae2_terminal", <item:appliedenergistics2:terminal>, [
-    <item:appliedenergistics2:annihilation_core>, <item:appliedenergistics2:formation_core>, <item:the_vault:perfect_larimar>,
-    <item:the_vault:perfect_benitoite>, <item:the_vault:perfect_larimar>, <item:appliedenergistics2:logic_processor>
+craftingTable.addShapeless("ae2_terminal", terminal, [
+    coreAnnih, coreForm, perfectLari,
+    perfectBeni, perfectLari, processorLogi
 ]);
 
 craftingTable.addShapeless("ae2_crafting_terminal", <item:appliedenergistics2:crafting_terminal>, [
-    <tag:items:forge:workbench>, <item:appliedenergistics2:calculation_processor>, <item:appliedenergistics2:terminal>,
-    <item:the_vault:echo_pog>
+    workbench, processorCalc, terminal,
+    pogEcho
 ]);
 
 craftingTable.addShapeless("ae2_speed_card", <item:appliedenergistics2:speed_card>, [
-    <item:appliedenergistics2:advanced_card>, <item:appliedenergistics2:purified_fluix_crystal>, <tag:items:the_vault:perfectcommongems>
+    <item:appliedenergistics2:advanced_card>, pureFluix, perfectCommon
 ]);
 
 craftingTable.addShapeless("ae2_capacity_card", <item:appliedenergistics2:capacity_card>, [
-    <item:appliedenergistics2:basic_card>, <item:appliedenergistics2:charged_certus_quartz_crystal>, <tag:items:the_vault:perfectcommongems>
+    <item:appliedenergistics2:basic_card>, crystalCertusCharged, perfectCommon
 ]);
 
-craftingTable.addShapeless("ae2_fluix_glass_cable", <item:appliedenergistics2:fluix_glass_cable> *4, [
-    <item:appliedenergistics2:quartz_fiber>, <tag:items:appliedenergistics2:crystals/fluix>, <tag:items:the_vault:perfectcommongems>,
-    <tag:items:appliedenergistics2:crystals/fluix>
+craftingTable.addShapeless("ae2_fluix_glass_cable", cableFluix *4, [
+    <item:appliedenergistics2:quartz_fiber>, crystalFluix, perfectCommon,
+    crystalFluix
 ]);
 
-craftingTable.addShapeless("ae2_fluix_glass_cable_redye", <item:appliedenergistics2:fluix_glass_cable>, [
-    <tag:items:appliedenergistics2:glass_cable>, <item:minecraft:water_bucket>
+// ... this (and the other 're-dye' recipes wouldn't be necessary if you used `removeByName`...
+craftingTable.addShapeless("ae2_fluix_glass_cable_redye", cableFluix, [
+    cableGlass, bucketWater
 ]);
 
-craftingTable.addShapeless("ae2_fluix_covered_cable", <item:appliedenergistics2:fluix_covered_cable>, [
-    <tag:items:quark:quilted_wools>, <tag:items:appliedenergistics2:glass_cable>, <item:the_vault:gem_wutodie>
+craftingTable.addShapeless("ae2_fluix_covered_cable", cableFluixCovered, [
+    <tag:items:quark:quilted_wools>, cableGlass, gemWuto
 ]);
 
-craftingTable.addShapeless("ae2_fluix_covered_cable_redye", <item:appliedenergistics2:fluix_covered_cable>, [
-    <tag:items:appliedenergistics2:covered_cable>, <item:minecraft:water_bucket>
+craftingTable.addShapeless("ae2_fluix_covered_cable_redye", cableFluixCovered, [
+    <tag:items:appliedenergistics2:covered_cable>, bucketWater
 ]);
 
-craftingTable.addShapeless("ae2_fluix_smart_cable", <item:appliedenergistics2:fluix_smart_cable>, [
-    <item:minecraft:redstone_block>, <item:appliedenergistics2:fluix_covered_cable>, <item:the_vault:gem_black_opal>,
-    <item:minecraft:glowstone>
+craftingTable.addShapeless("ae2_fluix_smart_cable", cableFluixSmart, [
+    blockRedstone, cableFluixCovered, gemOpal,
+    blockGlowstone
 ]);
 
-craftingTable.addShapeless("ae2_fluix_smart_cable_redye", <item:appliedenergistics2:fluix_smart_cable>, [
-    <tag:items:appliedenergistics2:smart_cable>, <item:minecraft:water_bucket>
+craftingTable.addShapeless("ae2_fluix_smart_cable_redye", cableFluixSmart, [
+    <tag:items:appliedenergistics2:smart_cable>, bucketWater
 ]);
 
-craftingTable.addShapeless("ae2_fluix_dense_cable", <item:appliedenergistics2:fluix_smart_dense_cable>, [
-    <item:minecraft:redstone_block>, <item:appliedenergistics2:fluix_smart_cable>, <item:the_vault:gem_pog>,
-    <item:minecraft:glowstone>
+craftingTable.addShapeless("ae2_fluix_dense_cable", cableDenseSmart, [
+    blockRedstone, cableFluixSmart, pogGem,
+    blockGlowstone
 ]);
 
-craftingTable.addShapeless("ae2_fluix_dense_cable_redye", <item:appliedenergistics2:fluix_smart_dense_cable>, [
-    <tag:items:appliedenergistics2:smart_dense_cable>, <item:minecraft:water_bucket>
+craftingTable.addShapeless("ae2_fluix_dense_cable_redye", cableDenseSmart, [
+    <tag:items:appliedenergistics2:smart_dense_cable>, bucketWater
 ]);
 
 craftingTable.addShaped("ae2_wireless", <item:appliedenergistics2:wireless_terminal>, [
-    [<item:minecraft:air>, <item:appliedenergistics2:wireless_receiver>, <item:minecraft:air>],
-    [<item:the_vault:perfect_black_opal>, <item:appliedenergistics2:terminal>, <item:the_vault:perfect_black_opal>],
-    [<item:minecraft:air>, <item:appliedenergistics2:dense_energy_cell>, <item:minecraft:air>]
+    [air, <item:appliedenergistics2:wireless_receiver>, air],
+    [perfectOpal, terminal, perfectOpal],
+    [air, <item:appliedenergistics2:dense_energy_cell>, air]
 ]);
 
 craftingTable.addShaped("ae2_vibration_chamber", <item:appliedenergistics2:vibration_chamber>, [
-    [<item:minecraft:iron_block>, <item:the_vault:gem_pog>, <item:minecraft:iron_block>],
-    [<item:minecraft:iron_block>, <item:ironfurnaces:gold_furnace>, <item:minecraft:iron_block>],
-    [<item:the_vault:gem_echo>, <item:appliedenergistics2:energy_acceptor>, <item:the_vault:gem_echo>]
+    [blockIron, pogGem, blockIron],
+    [blockIron, furnaceGold, blockIron],
+    [gemEcho, energyAcceptor, gemEcho]
 ]);
 
-craftingTable.addShaped("ae2_energy_acceptor", <item:appliedenergistics2:energy_acceptor>, [
-    [<item:minecraft:iron_block>, <item:appliedenergistics2:quartz_glass>, <item:the_vault:gem_echo>],
-    [<item:appliedenergistics2:quartz_glass>, <item:appliedenergistics2:fluix_block>, <item:appliedenergistics2:quartz_glass>],
-    [<item:the_vault:gem_echo>, <item:appliedenergistics2:quartz_glass>, <item:minecraft:iron_block>]
+craftingTable.addShaped("ae2_energy_acceptor", energyAcceptor, [
+    [blockIron, glassQuartz, gemEcho],
+    [glassQuartz, blockFluix, glassQuartz],
+    [gemEcho, glassQuartz, blockIron]
 ]);
 
-craftingTable.addShaped("ae2_quartz_glass_lari", <item:appliedenergistics2:quartz_glass> * 4, [
-    [<tag:items:forge:dusts/quartz>, <tag:items:forge:glass>, <tag:items:forge:dusts/quartz>],
-    [<tag:items:forge:glass>, <item:the_vault:gem_larimar>, <tag:items:forge:glass>],
-    [<tag:items:forge:dusts/quartz>, <tag:items:forge:glass>, <tag:items:forge:dusts/quartz>]
+// ... why isn't there a tag for Beni and Lari?
+craftingTable.addShaped("ae2_quartz_glass_lari", glassQuartz * 4, [
+    [dustQuartz, glass, dustQuartz],
+    [glass, gemLari, glass],
+    [dustQuartz, glass, dustQuartz]
 ]);
 
-craftingTable.addShaped("ae2_quartz_glass_beni", <item:appliedenergistics2:quartz_glass> * 4, [
-    [<tag:items:forge:dusts/quartz>, <tag:items:forge:glass>, <tag:items:forge:dusts/quartz>],
-    [<tag:items:forge:glass>, <item:the_vault:gem_benitoite>, <tag:items:forge:glass>],
-    [<tag:items:forge:dusts/quartz>, <tag:items:forge:glass>, <tag:items:forge:dusts/quartz>]
+craftingTable.addShaped("ae2_quartz_glass_beni", glassQuartz * 4, [
+    [dustQuartz, glass, dustQuartz],
+    [glass, gemBeni, glass],
+    [dustQuartz, glass, dustQuartz]
 ]);

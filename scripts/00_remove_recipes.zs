@@ -1,3 +1,5 @@
+#priority 200
+
 /* scripts made by Douwsky
 for Iskall85's Vaulthunters */
 
@@ -55,7 +57,7 @@ import crafttweaker.api.tag.MCTag;
  <item:minecraft:black_concrete_powder>,
  <item:minecraft:light_gray_concrete_powder>,]);
 
-#RemoveRecipies
+// RemoveRecipes
 
 //craftingTable.removeRecipe(<item:industrialforegoing:mob_imprisonment_tool>);
 //craftingTable.removeRecipe(<item:industrialforegoing:meat_feeder>);
@@ -626,7 +628,7 @@ craftingTable.removeRecipe(<item:botania:missile_rod>);
 craftingTable.removeRecipe(<item:modularrouters:distributor_module>);
 //craftingTable.removeRecipe();
 
-//removing items from JEI
+// removing items from JEI
 
 mods.jei.JEI.hideRegex(".*artifact.*");
 mods.jei.JEI.hideRegex(".*legacy.*");
