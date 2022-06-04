@@ -5,13 +5,13 @@ Desktop.ini
 Thumbs.db
 
 # Minecraft - General
+backups/
 crash-reports/
 dumps/
 logs/
 mods/
 saves/
 screenshots/
-# options.txt
 usercache.json
 usernamecache.json
 *.toml.bak
@@ -19,6 +19,8 @@ usernamecache.json
 # Mod-specific
 config/contentcreatorintegration/default/stats.json
 local/ftbchunks/data
+local/ftbutilities/backups.json
+map exports/
 .mixin.out/
 patchouli_data.json
 playerSnapshots/
