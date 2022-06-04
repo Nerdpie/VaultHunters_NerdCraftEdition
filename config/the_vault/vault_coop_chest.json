@@ -36,9 +36,9 @@
       "yOffset": 1.2,
       "zOffset": 0.0,
       "causesFire": true,
-      "damage": 8.0,
       "mode": "BREAK",
-      "name": "Explosion"
+      "name": "Explosion",
+      "damage": 8.0
     }
   ],
   "POTION_CLOUD_EFFECTS": [
@@ -50,8 +50,37 @@
     }
   ],
   "LEVELS": [
-    {
-      "MIN_LEVEL": 0,
+    { "MIN_LEVEL": 0,
+      "DEFAULT_POOL": [
+        {
+          "value": "Dummy",
+          "weight": 160
+        },
+        {
+          "value": "Mob Trap",
+          "weight": 4
+        },
+        {
+          "value": "Poison",
+          "weight": 8
+        }
+      ],
+      "RAFFLE_POOL": [
+        {
+          "value": "Dummy",
+          "weight": 160
+        },
+        {
+          "value": "Mob Trap",
+          "weight": 4
+        },
+        {
+          "value": "Poison",
+          "weight": 8
+        }
+      ]
+    },
+    { "MIN_LEVEL": 25,
       "DEFAULT_POOL": [
         {
           "value": "Dummy",
