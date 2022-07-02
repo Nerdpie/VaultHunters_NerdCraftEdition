@@ -61,7 +61,7 @@ waypointTPCommand:/tp @s
 arrowScale:1.5
 arrowColour:0
 smoothDots:true
-playerIcons:1
+playerIcons:2
 mobIcons:2
 hostileIcons:2
 tamedIcons:3
@@ -76,7 +76,7 @@ waypointOpacityMap:90
 hideWorldNames:1
 openSlimeSettings:true
 alwaysShowDistance:false
-playerNames:0
+playerNames:2
 otherTeamsNames:3
 friendlyMobNames:0
 hostileMobNames:0
@@ -86,7 +86,7 @@ tamedMobNames:3
 showLightLevel:0
 renderLayerIndex:1
 crossDimensionalTp:true
-showTime:0
+showTime:3
 biomeColorsVanillaMode:false
 lookingAtAngle:20
 lookingAtAngleVertical:180
@@ -100,7 +100,7 @@ compassLocation:1
 compassScale:1
 caveMapsDepth:30
 hideWaypointCoordinates:false
-renderAllSets:false
+renderAllSets:true
 playerArrowOpacity:100
 waypointsBottom:false
 minimapShape:0

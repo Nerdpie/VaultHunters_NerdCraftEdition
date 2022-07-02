@@ -14,6 +14,53 @@
                 "type": "toast"
               }
             ]
+          },
+          {
+            "name": "Chat pseudo-integration",
+            "conditions": [
+              {
+                "source": "[T: _]  ",
+                "target": "_",
+                "replacement": "$user",
+                "result": "msgStart",
+                "literal": true,
+                "type": "stringReplace"
+              },
+              {
+                "prefix": "$msgStart",
+                "suffix": "$message",
+                "variableName": "msgFormatted",
+                "type": "stringConcat"
+              }
+            ],
+            "outcomes": [
+              {
+                "message": "$msgFormatted",
+                "type": "chat"
+              }
+            ]
+          },
+          {
+            "name": "Relic Booster",
+            "disabled": true,
+            "conditions": [],
+            "outcomes": [
+              {
+                "command": "give @a the_vault:relic_booster_pack",
+                "type": "command"
+              }
+            ]
+          },
+          {
+            "name": "Mystery Box",
+            "disabled": true,
+            "conditions": [],
+            "outcomes": [
+              {
+                "command": "give @a the_vault:mystery_box",
+                "type": "command"
+              }
+            ]
           }
         ],
         "action": [

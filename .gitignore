@@ -3,6 +3,7 @@ Desktop.ini
 .DS_Store
 *.swp
 Thumbs.db
+*.log
 
 # Minecraft - General
 backups/
@@ -17,6 +18,7 @@ usernamecache.json
 *.toml.bak
 
 # Mod-specific
+config/camera-client.toml # Includes the path last loaded from
 config/contentcreatorintegration/default/stats.json
 local/ftbchunks/data
 local/ftbutilities/backups.json
@@ -32,7 +34,10 @@ resourcepacks/Quark\ Programmer\ Art.zip
 
 # SECURITY/PRIVACY CRITICAL
 contentcreatorintegration.toml
+servers.dat
+servers.dat_old
 
 # Decide per-pack
 config/jei/bookmarks.ini
 options.txt
+resourcepacks/
