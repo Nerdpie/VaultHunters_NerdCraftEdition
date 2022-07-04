@@ -1,0 +1,22 @@
+{
+  "name": "Image Test",
+  "icon": "camera:camera",
+  "category": "patchouli:welcome",
+  "sortnum": 0,
+  "priority": false,
+  "pages": [
+    {
+      "type": "image",
+      "images": [
+        "nerdcraft:images/vault_loadout.png"
+      ],
+      "text": "Nerdpie's Vault loadout as an image test"
+    },
+    {
+      "type": "link",
+      "text": "The wiki lists very specific guidelines for image size and formatting; see below: ",
+      "url": "https://vazkiimods.github.io/Patchouli/docs/patchouli-basics/page-types#image-pages",
+      "link_text": "Patchouli Wiki"
+    }
+  ]
+}

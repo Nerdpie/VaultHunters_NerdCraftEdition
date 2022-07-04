@@ -7,7 +7,6 @@
   "pages": [
     {
       "type": "text",
-      "priority": true,
       "text": "Hello, $(playername), and welcome to the Nerdcraft Edition of this pack!  Hopefully this guide covers both the nuances of the base pack, as well as any shenanigans that Nerdpie has been up to..."
     }
   ]

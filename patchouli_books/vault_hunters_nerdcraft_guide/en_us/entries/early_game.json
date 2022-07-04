@@ -1,0 +1,23 @@
+{
+  "name": "Early Game",
+  "icon": "supplementaries:globe",
+  "category": "patchouli:getting_started",
+  "sortnum": 0,
+  "priority": true,
+  "pages": [
+    {
+      "type": "text",
+      "text": "It is crucial to note that Vault Hunters has changed a few things in Vanilla, and most mods require 'beating' Vanilla before even starting.  (There are exceptions, such as Quark.)"
+    },
+    {
+      "type": "text",
+      "text": "All vanilla armor has had its armor value nerfed, and its armor toughness has been removed."
+    },
+    {
+      "type": "spotlight",
+      "item": "minecraft:potion{Potion: \"minecraft:healing\"}",
+      "title": "Healing Potions",
+      "text": "Unfortunately, the recipe does NOT sync properly on servers.  Potions of healing require a $(item)Golden Apple$()"
+    }
+  ]
+}
