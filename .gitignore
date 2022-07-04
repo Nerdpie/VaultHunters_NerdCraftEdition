@@ -20,6 +20,7 @@ usernamecache.json
 # Mod-specific
 config/camera-client.toml # Includes the path last loaded from
 config/contentcreatorintegration/default/stats.json
+config/litematica/ # Includes per-world data, potentially server data
 local/ftbchunks/data
 local/ftbutilities/backups.json
 map exports/
@@ -27,6 +28,7 @@ map exports/
 patchouli_data.json
 playerSnapshots/
 realms_persistence.json
+schematics/ # Binary files...
 XaeroWaypoints*/
 XaeroWorldMap
 

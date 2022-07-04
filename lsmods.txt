@@ -1,3 +1,4 @@
+AkashicTome-1.4-16.jar
 appleskin-forge-mc1.16.x-2.2.0.jar
 appliedenergistics2-8.4.6.jar
 archers_paradox-1.16.5-1.4.0.1.jar
@@ -10,10 +11,12 @@ Botania-1.16.5-420.1.jar
 buildinggadgets-1.16.5-3.8.2.jar
 byg-1.3.5.jar
 camera-1.16.5-1.0.14.jar
+ClientTweaks_1.16.3-5.3.0.jar
 Clumps-6.0.0.27.jar
 cofh_core-1.16.5-1.4.0.6.jar
 comforts-forge-1.16.5-4.0.1.3.jar
 Compressium-1.16.5-1.2.3.jar
+configured-1.5.2-1.16.5.jar
 ContentCreatorIntegration-1.16.5-Forge-1.9.1.jar
 Controlling-7.0.0.28.jar
 CookingForBlockheads_1.16.5-9.3.4.jar
@@ -59,8 +62,10 @@ JEITweaker-1.16.5-1.1.0.49.jar
 JustEnoughProfessions-1.16.5-1.2.1.jar
 JustEnoughResources-1.16.5-0.12.1.133.jar
 lazydfu-0.1.3.jar
+litematica-forge-1.16.5-0.0.0-dev.20210917.jar
 Lollipop-1.16.5-3.2.9.jar
 lootr-1.16.5-0.1.11.38.jar
+malilib-forge-1.16.5-0.10.0-dev.21+beta.1.jar
 masonry-1.16.3-0.3.6.jar
 mcjtylib-1.16-5.1.2.jar
 mcw-bridges-2.0.1-mc1.16.5.jar
@@ -76,6 +81,7 @@ MmmMmmMmmMmm-1.16.5-1.3.1.jar
 modular-routers-1.16.5-7.4.0-55.jar
 moreoverlays-1.18.15-mc1.16.5.jar
 Morpheus-1.16.5-4.2.70.jar
+Morph-o-Tool-1.4-27.jar
 MouseTweaks-2.14-mc1.16.2.jar
 movingelevators-1.2.34-mc1.16.5.jar
 neoncraft-2.1.jar
