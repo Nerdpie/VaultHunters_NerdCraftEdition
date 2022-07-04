@@ -1,11 +1,15 @@
+# ==========
 # General
+# ==========
 Desktop.ini
 .DS_Store
 *.swp
 Thumbs.db
 *.log
 
+# ==========
 # Minecraft - General
+# ==========
 backups/
 crash-reports/
 dumps/
@@ -17,10 +21,14 @@ usercache.json
 usernamecache.json
 *.toml.bak
 
+# ==========
 # Mod-specific
-config/camera-client.toml # Includes the path last loaded from
+# ==========
+# Includes the path last loaded from
+config/camera-client.toml
 config/contentcreatorintegration/default/stats.json
-config/litematica/ # Includes per-world data, potentially server data
+# Includes per-world data, potentially server data
+config/litematica/
 local/ftbchunks/data
 local/ftbutilities/backups.json
 map exports/
@@ -28,18 +36,23 @@ map exports/
 patchouli_data.json
 playerSnapshots/
 realms_persistence.json
-schematics/ # Binary files...
+# Binary files...
+schematics/
 XaeroWaypoints*/
 XaeroWorldMap
 
 resourcepacks/Quark\ Programmer\ Art.zip
 
+# ==========
 # SECURITY/PRIVACY CRITICAL
+# ==========
 contentcreatorintegration.toml
 servers.dat
 servers.dat_old
 
+# ==========
 # Decide per-pack
+# ==========
 config/jei/bookmarks.ini
 options.txt
 resourcepacks/
